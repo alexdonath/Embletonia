@@ -1,17 +1,13 @@
 # Orthograph_Quality_Checker.py
 
-**Orthograph_Quality_Checker** performs a quality assessment of transcriptome assemblies based on orthology predictions with [Orthograph](https://github.com/mptrsen/Orthograph)[^1].
+**Orthograph_Quality_Checker** performs a quality assessment of transcriptome assemblies based on orthology predictions with [Orthograph](https://github.com/mptrsen/Orthograph)<sup>[1](#one)</sup>.
 
 ## System requirements
-
----
 
 * Python 3.6.4 or newer
 * Required Python modules: `argparse`, `Bio`, `operator`, `os`, `re`, `shutil`, `sys`
 
 ## Parameters
-
----
 
 The program has three parameters:
 
@@ -28,8 +24,6 @@ The path to the directory where the (temporary) summary files for individual ass
 Setting `--reuse_tmp` allows you to re-use the summary files from a previous run that are stored in your temporary directory (see `-t/--tmpdir`) to skip the time-consuming step of analyzing all assemblies. This comes in handy if you only want to repeat the step leading to the final summary file.
 
 ## The config file
-
----
 
 The config file has to be in text format; any file suffix will do.
 
@@ -52,14 +46,10 @@ All paths have to be either absolute or relative to the location of `Orthograph_
 
 ## Data preparation
 
----
-
 In order for the program to work properly, the structure of the directory tree in the directory specified using the tag `ORTHOGRAPH=` has to look like this:
 `ORTHOGRAPH/ASSEMBLER/TAXON/aa`
 
 ## The output
-
----
 
 The final output is a tab-separated spreadsheet file (`Summarized_Orthograph_results.tsv`) that can be opened in a text editor or a spreadsheet editor like Excel.
 The first column in the file contains the taxon names. The following fields in the same row each correspond to one assembly of this taxon.
@@ -73,4 +63,4 @@ There are four values in each of those fields:
 
 ---
 
-[^1] Petersen, M., Meusemann, K., Donath, A. et al. Orthograph: a versatile tool for mapping coding nucleotide sequences to clusters of orthologous genes. BMC Bioinformatics 18, 111 (2017). [https://doi.org/10.1186/s12859-017-1529-8](https://doi.org/10.1186/s12859-017-1529-8)
+<a name="one">[1]</a> Petersen, M., Meusemann, K., Donath, A. et al. Orthograph: a versatile tool for mapping coding nucleotide sequences to clusters of orthologous genes. BMC Bioinformatics 18, 111 (2017). [https://doi.org/10.1186/s12859-017-1529-8](https://doi.org/10.1186/s12859-017-1529-8)

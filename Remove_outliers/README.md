@@ -19,4 +19,4 @@ If not already present, the script will create a directory `aa_outliers_removed/
 
 ---
 
-[^1] [https://github.com/alexdonath/checker_complete-v2](https://github.com/alexdonath/checker_complete-v2)
+<a name="one">[1]</a> [https://github.com/alexdonath/checker_complete-v2](https://github.com/alexdonath/checker_complete-v2)

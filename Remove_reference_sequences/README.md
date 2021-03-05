@@ -9,13 +9,11 @@ The script removes all sequences belonging to reference species from the alignme
 
 ## Other requirements
 
-
 The script has to be in the same directory as the files from which the reference sequences are to be removed.
 
 Note that input files have to have the ending `.fas[ta]`.
 
 ## Output
-
 
 It will automatically create a subdirectory named `no_refseqs/`, in which the modified files will be saved.
 
