@@ -1,0 +1,4 @@
+ALNDIR=./aln
+ORTHOGRAPH=./Orthograph
+ASSEMBLERS=BinPacker, Shannon
+TAXA=HW01_Armina_tigrina, HW02_Berghia_verrucicornis
